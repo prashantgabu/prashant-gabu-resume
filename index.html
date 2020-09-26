@@ -39,7 +39,9 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Achievements</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" download href="assets/Prashant Gabu.pdf">Download Resume</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" download
+                        href="assets/Prashant Gabu.pdf">Download Resume</a></li>
             </ul>
         </div>
     </nav>
@@ -169,11 +171,11 @@
                     <div class="skill-bar-percent">70%</div>
                 </div> <!-- End Skill Bar -->
 
-                <div class="skillbar clearfix " data-percent="70%">
+                <!-- <div class="skillbar clearfix " data-percent="70%">
                     <div class="skillbar-title" style="background: #8DA3EB;"><span>PHP</span></div>
                     <div class="skillbar-bar" style="background: #8DA3EB;"></div>
                     <div class="skill-bar-percent">70%</div>
-                </div> <!-- End Skill Bar -->
+                </div> End Skill Bar -->
                 <div class="skillbar clearfix " data-percent="70%">
                     <div class="skillbar-title" style="background: #EFD81D;"><span>Java Script</span></div>
                     <div class="skillbar-bar" style="background: #EFD81D;"></div>
@@ -258,6 +260,87 @@
                 </ul>
             </div>
         </section>
+        <section class="resume-section" id="contact">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Contact me</h2>
+                <form class="needs-validation"
+                    action="https://script.google.com/macros/s/AKfycbz1g4JQboW-R6WCFeQ3xXln8K9BESbnEdyqRQzYqMk9x_tj3HA/exec"
+                    method="post" data-email="prashantg5399@gmail.com">
+                    <div class="form-row">
+                        <div class="col-md-9 mb-3">
+                            <label for="validationCustom01">Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name" value=""
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-9">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input name="email" type="email" class="form-control" id="email"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small> -->
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-9 mb-3">
+                            <label for="validationCustom01">Subject</label>
+                            <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject"
+                                value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea name="message" class="form-control" id="message" cols="48" rows="3"></textarea>
+                        </div>
+                    </div>
+
+
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </form>
+
+                <script>
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function () {
+                        'use strict';
+                        window.addEventListener('load', function () {
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            var forms = document.getElementsByClassName('needs-validation');
+                            // Loop over them and prevent submission
+                            var validation = Array.prototype.filter.call(forms, function (form) {
+                                form.addEventListener('submit', function (event) {
+                                    if (form.checkValidity() === false) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                    }
+                                    form.classList.add('was-validated');
+                                }, false);
+                            });
+                        }, false);
+                    })();
+                </script>
+                <!-- <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Secured 1st rank in "Tech Expo"
+                        Event at our college in the third
+                        year for the project Doctor
+                        appointment System .
+                    </li>
+
+
+
+
+                </ul> -->
+            </div>
+        </section>
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -266,6 +349,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
     <script>
         jQuery(document).ready(function () {
             jQuery('.skillbar').each(function () {
